@@ -1,16 +1,27 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title> hello</title>
-    </head>
-    <body>
-        <h1> hello dong </h1>
-        <script>
-            const a = 3;
-            let s = Math.pow(a,2)*(Math.sqrt(3))/4;
-            console.log(s);
-        
-        </script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> hello</title>
+</head>
+<body>
+    <h1> hello dong </h1>
+    <script>
+        let canhA = prompt( " Nhap vao gia tri canh a la");
+        let canhB = prompt( " Nhap vao gia tri canh b la");
+        let canhC = prompt( " Nhap vao gia tri canh c la");
 
-    </body>
+    if(Number(canhA)>0&&Number(canhB)>0&&Number(canhC)>0&&Number(canhA)+Number(canhB)>Number(canhC)&&Number(canhB)+Number(canhC)>Number(canhA)&&Number(canhC)+Number(canhA)>Number(canhB)){
+         let p = (Number(canhA)+Number(canhB)+Number(canhC))/2;
+         let s =Math.sqrt(p*(p-Number(canhA))*(p-Number(canhB))*(p-Number(canhC)));
+         console.log("dien tich tam giac la");
+         console.log(s);
+    }
+     else{
+         console.log("khong phai tam giac");
+     };
+    </script>
+</body>
 </html>
